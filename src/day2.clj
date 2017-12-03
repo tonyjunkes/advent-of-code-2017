@@ -12,5 +12,5 @@
 
 (defn part-2 []
   (->> (parse-input input)
-    (mapcat #(remove ratio? (map (fn [[a b]] (/ b a)) (map sort (combinations % 2)))))
-    (reduce +)))
+       (mapcat #(remove ratio? (map (fn [[a b]] (/ b a)) (map sort (combinations % 2)))))
+       (reduce +)))
